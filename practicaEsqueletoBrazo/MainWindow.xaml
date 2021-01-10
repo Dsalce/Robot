@@ -1,0 +1,18 @@
+﻿<Window x:Class="practicaEsqueletoBrazo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:k="http://schemas.microsoft.com/kinect/2013" 
+        Title="MainWindow" Height="10000" Width="10000" WindowState="Maximized" Loaded="load_window">
+
+    <k:KinectRegion x:Name="kinectRegion"  >
+        <Grid>
+
+            <k:KinectSensorChooserUI Name="sensorChooserUi" Grid.Row="0" Grid.Column="0" Margin="656,15,524,50" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <Canvas Name="canvasEsqueleto" />
+            <TextBox Name="dist" HorizontalAlignment="Right" TextWrapping="Wrap" Text="Nada" VerticalAlignment="Top" FontSize="72" Foreground="White" Background="Black"/>
+
+        </Grid>
+
+    </k:KinectRegion>
+
+</Window>
